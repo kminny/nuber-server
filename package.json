@@ -1,0 +1,9 @@
+{
+  "name": "nuber-server",
+  "version": "1.0.0",
+  "description": "nuber server for nuber clone",
+  "main": "index.js",
+  "repository": "https://github.com/kminny/nuber-server",
+  "author": "kminny <darkdevil94@naver.com>",
+  "license": "MIT"
+}

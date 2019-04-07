@@ -6,7 +6,7 @@ nuber server for uber clone coding
 
 ### Public Resolvers:
 
-- [ ] Sign in / Sign up with Facebook
+- [x] Sign in / Sign up with Facebook
 - [ ] Sign in / Sign up with Email
 - [ ] Starts Phone Number Verification
 - [ ] Complete Phone Number Verfication
@@ -16,6 +16,8 @@ nuber server for uber clone coding
 
 ### Private Resolvers:
 
+- [ ] Generate JWT
+- [ ] Verify JWT
 - [ ] Verify Email
 - [ ] Get my Profile
 - [ ] Update my Profile

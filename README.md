@@ -7,7 +7,7 @@ nuber server for uber clone coding
 ### Public Resolvers:
 
 - [x] Sign in / Sign up with Facebook
-- [ ] Sign in / Sign up with Email
+- [x] Sign in / Sign up with Email
 - [ ] Starts Phone Number Verification
 - [ ] Complete Phone Number Verfication
 - [ ] Sign up with Email

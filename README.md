@@ -10,21 +10,21 @@ nuber server for uber clone coding
 - [x] Sign in / Sign up with Email
 - [x] Starts Phone Number Verification
 - [x] Complete Phone Number Verfication
-- [ ] Sign up with Email
+- [x] Sign up with Email
 
 ---
 
 ### Authentication
 
-- [ ] Generate JWT
-- [ ] Verify JWT
+- [x] Generate JWT
+- [x] Verify JWT
 
 ---
 
 ### Private Resolvers:
 
+- [x] Get my Profile
 - [ ] Verify Email
-- [ ] Get my Profile
 - [ ] Update my Profile
 - [ ] Toggle Driving Mode
 - [ ] Report Location / Orientation

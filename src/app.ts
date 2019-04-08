@@ -5,6 +5,8 @@ import cors from "cors";
 import helmet from "helmet";
 import logger from "morgan";
 import schema from "./schema";
+import decodeJWT from "./utils/decodeJWT";
+import { NextFunction, Response } from "express";
 
 class App {
   public app: GraphQLServer;
@@ -12,7 +14,12 @@ class App {
     this.app = new GraphQLServer({
       // schema: schema
       // 최신 자바스크립트에서 객체의 key와 value가 같으면 하나만 적으면 된다.
-      schema
+      schema,
+      context: req => {
+        return {
+          req: req.request
+        };
+      }
     });
     this.middlewares();
   }
@@ -20,6 +27,24 @@ class App {
     this.app.express.use(cors());
     this.app.express.use(logger("dev"));
     this.app.express.use(helmet());
+    this.app.express.use(this.jwt);
+  };
+
+  private jwt = async (
+    req,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> => {
+    const token = req.get("X-JWT");
+    if (token) {
+      const user = await decodeJWT(token);
+      if (user) {
+        req.user = user;
+      } else {
+        req.user = undefined;
+      }
+    }
+    next();
   };
 }
 

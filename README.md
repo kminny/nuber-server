@@ -14,10 +14,15 @@ nuber server for uber clone coding
 
 ---
 
-### Private Resolvers:
+### Authentication
 
 - [ ] Generate JWT
 - [ ] Verify JWT
+
+---
+
+### Private Resolvers:
+
 - [ ] Verify Email
 - [ ] Get my Profile
 - [ ] Update my Profile

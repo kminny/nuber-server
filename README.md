@@ -9,7 +9,7 @@ nuber server for uber clone coding
 - [x] Sign in / Sign up with Facebook
 - [x] Sign in / Sign up with Email
 - [x] Starts Phone Number Verification
-- [ ] Complete Phone Number Verfication
+- [x] Complete Phone Number Verfication
 - [ ] Sign up with Email
 
 ---

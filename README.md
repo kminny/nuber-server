@@ -24,8 +24,9 @@ nuber server for uber clone coding
 ### Private Resolvers:
 
 - [x] Get my Profile
-- [ ] Verify Email
-- [ ] Update my Profile
+- [x] Request Email Verification
+- [x] Complete Email Verification
+- [x] Update my Profile
 - [ ] Toggle Driving Mode
 - [ ] Report Location / Orientation
 - [ ] Add Place

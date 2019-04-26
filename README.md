@@ -30,14 +30,18 @@ nuber server for uber clone coding
 - [x] Toggle Driving Mode
 - [x] Report Location / Orientation
 - [x] Add Place
-- [ ] Edit Place
-- [ ] Delete Place
-- [ ] See nearby Drivers
-- [ ] Subscribe to nearby Drivers
-- [ ] Request a Ride
-- [ ] Get nearby Rides Requests
-- [ ] Subscribe to nearby Ride Requests
-- [ ] Subscribe to Ride Status
+- [x] Edit Place
+- [x] Delete Place
+- [x] Get My Places
+- [x] See nearby Drivers
+- [x] Subscribe to nearby Drivers
+- [x] Request a Ride
+- [x] Get nearby Rides Requests
+- [x] Subscribe to nearby Ride Requests
+- [x] Update Ride Status
+- [x] Get Ride
+- [x] Subscribe to Ride Status
+- [x] Create a Chat Room
 - [ ] Get Chat room Messages
 - [ ] Subscribe to Char room Messages
 - [ ] Send a Chat Message

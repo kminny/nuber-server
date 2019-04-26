@@ -1,6 +1,6 @@
 // 우리 앱의 모든 설정들
 
-import { GraphQLServer } from "graphql-yoga";
+import { GraphQLServer, PubSub } from "graphql-yoga";
 import cors from "cors";
 import helmet from "helmet";
 import logger from "morgan";
@@ -10,14 +10,20 @@ import { NextFunction, Response } from "express";
 
 class App {
   public app: GraphQLServer;
+  public pubSub: any;
   constructor() {
+    this.pubSub = new PubSub();
+    this.pubSub.ee.setMaxListeners(99);
     this.app = new GraphQLServer({
       // schema: schema
       // 최신 자바스크립트에서 객체의 key와 value가 같으면 하나만 적으면 된다.
       schema,
       context: req => {
+        const { connection: { context = null } = {} } = req;
         return {
-          req: req.request
+          req: req.request,
+          pubSub: this.pubSub,
+          context
         };
       }
     });

@@ -1,6 +1,6 @@
-"# nuber-server"
+"#server"
 
-nuber server for uber clone coding
+server for uber clone
 
 ## Resolvers
 
@@ -43,10 +43,8 @@ nuber server for uber clone coding
 - [x] Subscribe to Ride Status
 - [x] Create a Chat Room
 - [x] Get Chat room Messages
-- [ ] Send a Chat Message
-- [ ] Subscribe to Char room Messages
-
-## Code Challenge
+- [x] Send a Chat Message
+- [x] Subscribe to Char room Messages
 
 - [ ] Get Ride History
 - [ ] See Ride Detail

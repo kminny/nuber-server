@@ -42,9 +42,9 @@ nuber server for uber clone coding
 - [x] Get Ride
 - [x] Subscribe to Ride Status
 - [x] Create a Chat Room
-- [ ] Get Chat room Messages
-- [ ] Subscribe to Char room Messages
+- [x] Get Chat room Messages
 - [ ] Send a Chat Message
+- [ ] Subscribe to Char room Messages
 
 ## Code Challenge
 

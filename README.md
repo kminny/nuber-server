@@ -46,5 +46,7 @@ server for uber clone
 - [x] Send a Chat Message
 - [x] Subscribe to Char room Messages
 
+---
+
 - [ ] Get Ride History
 - [ ] See Ride Detail

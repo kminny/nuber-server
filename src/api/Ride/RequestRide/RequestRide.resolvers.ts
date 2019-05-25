@@ -22,7 +22,7 @@ const resolvers: Resolvers = {
           try {
             const ride = await Ride.create({ ...args, passenger: user }).save();
             pubSub.publish("rideRequest", { NearbyRideSubscription: ride });
-            user.isRiding = true;
+            // user.isRiding = true;
             user.save();
 
             return {

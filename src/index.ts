@@ -20,17 +20,19 @@ const appOptions: Options = {
     path: SUBSCRIPTION_ENDPOINT,
     onConnect: async connectionParams => {
       const token = connectionParams["X-JWT"];
-      if (token) {
-        const user = await decodeJWT(token);
+      const user = await decodeJWT(token);
 
-        if (user) {
-          return {
-            currentUser: user
-          };
-        }
+      if (user) {
+        return {
+          currentUser: user
+        };
+      } else {
+        return {
+          currentUser: null
+        };
       }
 
-      throw new Error("NO JWT. Can't subscribe");
+      // throw new Error("NO JWT. Can't subscribe");
     }
   }
 };

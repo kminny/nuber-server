@@ -16,6 +16,8 @@ const resolvers: Resolvers = {
       const { phoneNumber, key } = args;
 
       try {
+        // check if this phone is verified already
+        // it means this phone is already
         const verification = await Verification.findOne({
           payload: phoneNumber,
           key: key
